@@ -17,6 +17,12 @@
   margin: 0;
   padding: 0;
 }
+.hidden {
+  display: none;
+}
+.hidden1 {
+  visibility: hidden;
+}
 
 html {
   font-size: 100%;
@@ -66,7 +72,7 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   font-weight: bold;
-  transition: 0.3 ease;
+  transition: 0.2 ease;
 }
 header nav ul li a::after {
   position: absolute;
@@ -80,7 +86,7 @@ header nav ul li a::after {
   background-color: var(--accentColor);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 header nav ul li a:hover::after {
@@ -88,9 +94,249 @@ header nav ul li a:hover::after {
   background-color: var(--accentColor);
   transform-origin: right;
 }
+.current {
+  font-weight: bold;
+}
+.current::after {
+  transform: scaleX(1);
+}
 
 .logo {
-  width: 6%;
+  width: 4%;
+  transform: scaleX(1);
+}
+
+/* buttons */
+.button1 {
+  text-decoration: none;
+  color: var(--mainColor);
+  padding: 1rem;
+  background-color: var(--detailColor2);
+  margin-top: 1rem;
+  width: fit-content;
+  border-radius: 1rem;
+  border: var(--mainColor) 1px outset;
+  font-size: 1.2rem;
+  align-self: center;
+  box-shadow: 3px 4px 5px 0px rgba(186, 184, 184, 0.75);
+}
+
+.buttonAdd {
+  text-decoration: none;
+
+  padding: 0.5rem;
+  font-weight: bold;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  border-radius: 1rem;
+  border: var(--accentColor) 5px solid;
+  font-size: 1.2rem;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+}
+.buttonAdd span {
+  color: var(--PageNoteIn);
+  margin-left: 1rem;
+  font-weight: lighter;
+}
+.buttonAdd2 {
+  text-decoration: none;
+
+  padding: 0.5rem;
+  font-weight: bold;
+
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  border-radius: 1rem;
+  border: var(--accentColor) 5px solid;
+  font-size: 1.2rem;
+  align-self: center;
+  justify-self: center;
+}
+.buttonAdd2 span {
+  color: var(--PageNoteIn);
+  margin-left: 1rem;
+  font-weight: lighter;
+}
+.oilNote {
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+  font-weight: bold;
+}
+
+/* customise first page styles */
+
+h1 {
+  margin-left: 5rem;
+  color: var(--mainColor);
+  font-style: italic;
+  font-weight: normal;
+}
+
+.customise1 {
+  display: flex;
+  margin: 2rem;
+}
+.customise1 section {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.customise1 section ul {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.customise1 section ul li {
+  list-style: decimal;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.introText {
+  margin: 1rem;
+  width: 80%;
+  margin-left: 5rem;
+  color: var(--PageNoteIn);
+  font-size: 1.2rem;
+}
+
+/* customiseOils */
+.customise2 {
+  display: flex;
+}
+.customise2 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  align-content: center;
+}
+.customise2 section {
+  width: 50%;
+}
+.customise2 form label {
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+}
+
+.top {
+  width: 30%;
+  margin-left: 35%;
+  /* margin-left: 100px; */
+  margin-bottom: -1rem;
+}
+.middle {
+  width: 50%;
+  align-self: center;
+  margin-left: 25%;
+}
+.base {
+  width: 80%;
+  margin-top: ;
+  margin-left: 10%;
+}
+
+.oilPop {
+  border: 4px solid #d2d6c5;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.ingredientPop {
+  border: 4px solid #d2d6c5;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: grid;
+  height: 23rem;
+}
+.ingredientPop h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+.cardContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+
+  width: fit-content;
+}
+.cardContent p {
+  color: var(--PageNoteIn);
+
+  font-size: 1.1rem;
+}
+.popUps {
+  display: flex;
+  margin-right: 2rem;
+}
+.oilContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightArrow,
+.leftArrow {
+  width: 12%;
+}
+
+/* when checked, add a border to the img */
+label input[type="radio"]:checked + img {
+  border: 3px solid #868c6d;
+}
+
+/* hiding the radio buttons the  a11y. way: 
+https://www.a11yproject.com/posts/how-to-hide-content/ */
+input[type="radio"],
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* setup transition for the icon */
+svg {
+  opacity: 0;
+  transition: all 2s; /* normally max 0.3s */
+}
+*/ label {
+  display: grid;
+}
+
+label > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+/* custimise shape */
+.shape {
+  display: flex;
+
+  justify-content: space-between;
+}
+.shape label {
+  display: flex;
+  flex-direction: column;
+}
+.shape label img {
+  width: 60%;
+  height: auto;
 }
 
 /* footer styles */
