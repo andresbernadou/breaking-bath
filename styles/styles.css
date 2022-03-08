@@ -294,8 +294,11 @@ h1 {
 }
 
 /* when checked, add a border to the img */
-label input[type="radio"]:checked + img {
-  border: 3px solid #868c6d;
+label input[type="radio"]:checked + img + a {
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.3s;
 }
 
 /* hiding the radio buttons the  a11y. way: 
@@ -303,8 +306,7 @@ https://www.a11yproject.com/posts/how-to-hide-content/ */
 input[type="radio"],
 .visually-hidden {
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
+
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
