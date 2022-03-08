@@ -37,11 +37,11 @@
         nothing but concentrated liquids containing aroma compounds from plants.
       </p>
       <article class="customise2">
-        <form>
+        <form method="get" action="customiseshape.html">
           <label>
             <input type="radio" name="es-oils" value="Top note" />
             <img class="top" src="images/top.svg" />
-            <a class="oilNote">Top note</a>
+            <a class="oilNote">Top note <span class="topoil"></span> </a>
             <svg>
               <path />
             </svg>
@@ -49,7 +49,7 @@
           <label>
             <input type="radio" name="es-oils" value="Heart note" />
             <img class="middle" src="images/middle.svg" />
-            <a class="oilNote">Heart note</a>
+            <a class="oilNote">Heart note<span class="heartoil"></span></a>
 
             <svg>
               <path />
@@ -59,7 +59,8 @@
             <input type="radio" name="es-oils" value="Base note" />
 
             <img class="base" src="images/base.svg" id="base" />
-            <a class="oilNote">Base note</a>
+            <a class="oilNote">Base note <span class="baseoil"></span></a>
+
             <svg>
               <path />
             </svg>
@@ -91,8 +92,15 @@
 
                 <img src="images/product/Cedarood.png" />
               </div>
-
-              <a class="buttonAdd">ADD<span> +10 DKK</span> </a>
+              <label class="buttonAdd">
+                Add this oil <span>+10 Dkk</span>
+                <input
+                  type="radio"
+                  name="basenote"
+                  onchange="handleOnChangeOil(this.value) "
+                  value="cedarood"
+                />
+              </label>
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow" />
@@ -125,7 +133,15 @@
                 <img src="images/product/SandalWood.svg" />
               </div>
 
-              <a class="buttonAdd">ADD<span> +10 DKK</span> </a>
+              <label class="buttonAdd">
+                Add this oil <span>+10 Dkk</span>
+                <input
+                  type="radio"
+                  name="basenote"
+                  onchange="handleOnChangeOil(this.value) "
+                  value="sandalwood"
+                />
+              </label>
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" />
@@ -156,7 +172,15 @@
                 <img src="images/product/cinnamon.png" />
               </div>
 
-              <a class="buttonAdd">ADD<span> +10 DKK</span> </a>
+              <label class="buttonAdd">
+                Add this oil <span>+10 Dkk</span>
+                <input
+                  type="radio"
+                  name="heartnote"
+                  onchange="handleOnChangeOil2(this.value) "
+                  value="cinnamon"
+                />
+              </label>
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow3" />
@@ -189,7 +213,15 @@
                 <img src="images/product/ginger.png" />
               </div>
 
-              <a class="buttonAdd">ADD<span> +10 DKK</span> </a>
+              <label class="buttonAdd">
+                Add this oil <span>+10 Dkk</span>
+                <input
+                  type="radio"
+                  name="heartnote"
+                  onchange="handleOnChangeOil2(this.value) "
+                  value="ginger"
+                />
+              </label>
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow4" />
@@ -223,7 +255,15 @@
                 <img src="images/product/lavender.png" />
               </div>
 
-              <a class="buttonAdd">ADD<span> +10 DKK</span> </a>
+              <label class="buttonAdd">
+                Add this oil <span>+10 Dkk</span>
+                <input
+                  type="radio"
+                  name="heartnote"
+                  onchange="handleOnChangeOil2(this.value) "
+                  value="lavender"
+                />
+              </label>
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow5" />
@@ -256,7 +296,15 @@
                 <img src="images/product/Bergamot.png" />
               </div>
 
-              <a class="buttonAdd">ADD<span> +10 DKK</span> </a>
+              <label class="buttonAdd">
+                Add this oil <span>+10 Dkk</span>
+                <input
+                  type="radio"
+                  name="topnote"
+                  onchange="handleOnChangeOil3(this.value) "
+                  value="bergamot"
+                />
+              </label>
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow6" />
@@ -289,7 +337,15 @@
                 <img src="images/product/orange.png" />
               </div>
 
-              <a class="buttonAdd">ADD<span> +10 DKK</span> </a>
+              <label class="buttonAdd">
+                Add this oil <span>+10 Dkk</span>
+                <input
+                  type="radio"
+                  name="topnote"
+                  onchange="handleOnChangeOil3(this.value) "
+                  value="orange sweet"
+                />
+              </label>
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow7" />
@@ -322,7 +378,15 @@
                 <img src="images/product/rosemary.png" />
               </div>
 
-              <a class="buttonAdd">ADD<span> +10 DKK</span> </a>
+              <label class="buttonAdd">
+                Add this oil <span>+10 Dkk</span>
+                <input
+                  type="radio"
+                  name="topnote"
+                  onchange="handleOnChangeOil3(this.value) "
+                  value="rosemary"
+                />
+              </label>
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow8" />

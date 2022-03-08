@@ -21,3 +21,8 @@ function onlyOneCheckBox() {
   }
 }
 onlyOneCheckBox();
+
+function handleOnChangeColor(col) {
+  console.log(col);
+  localStorage.setItem("Color1", col);
+}

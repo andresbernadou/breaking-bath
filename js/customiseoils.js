@@ -138,3 +138,28 @@ function beforeOil4() {
 
   document.querySelector("#popUps8").classList.remove("popUps");
 }
+
+// storage the oils
+function handleOnChangeOil(oil) {
+  console.log(oil);
+  localStorage.setItem("baseoil", oil);
+  handleLocalStorage();
+}
+function handleOnChangeOil2(oil2) {
+  console.log(oil2);
+  localStorage.setItem("heartoil", oil2);
+  handleLocalStorage();
+}
+function handleOnChangeOil3(oil3) {
+  console.log(oil3);
+  localStorage.setItem("topoil", oil3);
+  handleLocalStorage();
+}
+function handleLocalStorage() {
+  var heartNote = localStorage.getItem("heartoil");
+  var topNote = localStorage.getItem("topoil");
+  var baseNote = localStorage.getItem("baseoil");
+  document.querySelector(".baseoil").textContent = baseNote;
+  document.querySelector(".heartoil").textContent = heartNote;
+  document.querySelector(".topoil").textContent = topNote;
+}

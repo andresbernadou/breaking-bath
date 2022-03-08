@@ -32,10 +32,15 @@
         We have different options, have a look and click on the one you like
         most.
       </p>
-      <form>
+      <form method="get" action="customisecolor.html">
         <div class="shape">
           <label>
-            <input type="radio" name="shapes" value="Square" />
+            <input
+              type="radio"
+              name="shapes"
+              value="Square"
+              onchange="handleOnChangeShape(this.value) "
+            />
 
             <img class="top" src="images/square.svg" />
             <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
@@ -45,7 +50,12 @@
             </svg>
           </label>
           <label>
-            <input type="radio" name="shapes" value="round" />
+            <input
+              type="radio"
+              name="shapes"
+              value="round"
+              onchange="handleOnChangeShape(this.value) "
+            />
 
             <img class="top" src="images/round.svg" />
             <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
@@ -55,7 +65,12 @@
             </svg>
           </label>
           <label>
-            <input type="radio" name="shapes" value="star" />
+            <input
+              type="radio"
+              name="shapes"
+              value="star"
+              onchange="handleOnChangeShape(this.value) "
+            />
 
             <img class="top" src="images/star.svg" />
             <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
@@ -65,7 +80,12 @@
             </svg>
           </label>
           <label>
-            <input type="radio" name="shapes" value="heart" />
+            <input
+              type="radio"
+              name="shapes"
+              value="heart"
+              onchange="handleOnChangeShape(this.value) "
+            />
 
             <img class="top" src="images/heart.svg" />
             <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
@@ -75,7 +95,12 @@
             </svg>
           </label>
           <label>
-            <input type="radio" name="shapes" value="rectangle" />
+            <input
+              type="radio"
+              name="shapes"
+              value="rectangle"
+              onchange="handleOnChangeShape(this.value) "
+            />
 
             <img class="top" src="images/rectangle.svg" />
             <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
@@ -111,4 +136,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/customiseshape.js"></script>
 </html>
