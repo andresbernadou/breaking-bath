@@ -9,7 +9,7 @@ document.querySelector("#rightArrow7").addEventListener("click", nextOil5);
 document.querySelector("#leftArrow2").addEventListener("click", beforeOil);
 document.querySelector("#leftArrow4").addEventListener("click", beforeOil2);
 document.querySelector("#leftArrow5").addEventListener("click", beforeOil3);
-document.querySelector("#leftArrow6").addEventListener("click", beforeOil3);
+document.querySelector("#leftArrow7").addEventListener("click", beforeOil5);
 document.querySelector("#leftArrow8").addEventListener("click", beforeOil4);
 function showOil() {
   document.querySelector("#popUps").classList.remove("hidden");
@@ -123,7 +123,7 @@ function beforeOil3() {
   document.querySelector("#popUps5").classList.remove("popUps");
 }
 
-function beforeOil3() {
+function beforeOil5() {
   document.querySelector("#popUps6").classList.remove("hidden");
   document.querySelector("#popUps6").classList.add("popUps");
   document.querySelector("#popUps7").classList.add("hidden");

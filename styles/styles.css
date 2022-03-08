@@ -290,7 +290,7 @@ h1 {
 
 .rightArrow,
 .leftArrow {
-  width: 12%;
+  width: 1.5rem;
 }
 
 /* when checked, add a border to the img */
