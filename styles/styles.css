@@ -294,7 +294,7 @@ h1 {
 }
 
 /* when checked, add a border to the img */
-label input[type="radio"]:checked + img + a {
+.customise2 label input[type="radio"]:checked + img + a {
   color: var(--mainColor);
   font-weight: bold;
   font-size: 1.4rem;
@@ -331,15 +331,75 @@ label > * {
   display: flex;
 
   justify-content: space-between;
+
+  flex-direction: row;
+  margin-top: 2rem;
 }
 .shape label {
   display: flex;
   flex-direction: column;
 }
 .shape label img {
-  width: 60%;
-  height: auto;
+  height: 10rem;
 }
+.shape label a {
+  margin-top: 3rem;
+}
+.shape label input[type="radio"]:checked + img + a {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+
+  transition: 0.3s;
+}
+input[type="submit"] {
+  align-self: center;
+  margin: auto;
+  margin-left: 33%;
+}
+/* custimise color */
+.color {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  flex-direction: row;
+
+  width: 90%;
+  margin-left: 5%;
+}
+.color label {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  align-content: center;
+  justify-content: center;
+}
+.color label img {
+  margin-bottom: 1rem;
+  height: 10rem;
+  width: 80%;
+  align-self: center;
+}
+.color label input[type="checkbox"]::selection + img + a {
+  border: 1px black solid;
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+
+  transition: 0.3s;
+}
+/* input[type="checkbox"],
+.visually-hidden {
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+} */
+
+/* hiding the radio buttons the  a11y. way: 
+https://www.a11yproject.com/posts/how-to-hide-content/ */
 
 /* footer styles */
 
