@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
 :root {
   --mainFont: "Lato", sans-serif;
   --subFont: "Satisfy", cursive;
+  --h2Font: 'Ledger', serif;
   --mainColor: #868c6d;
   --accentColor: #f8e4d1;
   --detailColor: #d2d6c5;
   --detailColor2: #f2e6d8;
   --pagesLeft: #c4c4c4 0.2;
   --PageNoteIn: #c4c4c4;
+  --buttonTextColor:white; 
   --sidePadding: 1rem;
 }
 /* global styling */
@@ -113,26 +116,87 @@ footer {
   margin-top: 1rem;
 }
 
-/* Workshop styles */
-.workshop_header h3 {
+/* Workshop style */
+.workshop_header h2 {
+  font-family: var(--mainFont);
+  color: var(--mainColor);
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 40px;
+  
 }
 .workshop_subtitle{
+  text-justify: auto;
+  font-family: var(--mainFont);
+  text-align: center;
+  font-size: 26px;
 
+}
+.workshop_content{
+  display: flex;
+  padding: 1em;
+  
 }
 .workshop_content_right{
-
+  font-family: var(--mainFont);
+  padding: 1em;
+  font-size: 26px;
+}
+.workshop_content_right h2{
+  font-family: var(--mainFont);
+  color: var(--mainColor);
+  padding: 1em;
+  padding-top: 2em;
+  
+}
+.workshop_content_right ul{
+  list-style: circle;
+  font-family: var(--mainFont);
 }
 .workshop_img{
-
+  width: 60%;
+  padding: 1em;
+  
 }
 .workshop_description{
+  font-family: var(--mainFont);
+  padding-bottom: 1em;
+  padding-right: 3em;
+  padding-left: 3em;
+  font-size: 26px;
 
 }
 .workshop_button{
+    background-color: var(--mainColor);
+    opacity: 80%;
+    border-radius: 50px;
+    border-width: 0;
+    box-shadow: rgba(25,25,25,.04) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    height: 30px;
+    padding: 3px 25px;
+    transition: all 200ms;
+    max-width: max-content;
+    margin-top: 4%;
+    text-align: center;
+  }
+  .workshop_button:hover{
+    background-color: var(--detailColor);
+    transform: scale(1.05);
+  }
 
+.workshop_line_images ul{
+  padding: 1em;
+  margin: 1em;
+  justify-content: space-between;
+  width: 100%;
+  display: inline-flex;
 }
-.workshop_line_images{
 
-}
+
+
 
 
