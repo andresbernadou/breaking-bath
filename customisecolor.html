@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body id="index">
+    <header>
+      <a class="logo" href="index.html"
+        ><img src="images/logos/cm-black.svg" alt="website-logo"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="customise.html" class="current">CUSTOMISE</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+        </ul>
+      </nav>
+      <li>
+        <a href="shop.html"
+          ><img src="/images/Icon.svg" alt="shopping-logo"
+        /></a>
+      </li>
+    </header>
+    <main>
+      <h1>3. Pick and mix colors</h1>
+      <p class="introText">Two colours can be chosen by clicking them.</p>
+      <form action="customisepreview.html">
+        <div id="checkboxgroup" class="color">
+          <label>
+            <input
+              class="pickcolor"
+              type="checkbox"
+              name="colors"
+              value="Artic white"
+              onchange="handleOnChangeColor(this.value)"
+            />
+            <span>Artic White</span>
+
+            <img class="top" src="images/product/artic-white.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+          </label>
+          <label>
+            <input
+              class="pickcolor"
+              type="checkbox"
+              name="colors"
+              value="Black"
+              onchange="handleOnChangeColor(this.value)"
+            />
+            <span>Black</span>
+
+            <img class="top" src="images/product/black.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+          </label>
+          <label>
+            <input
+              class="pickcolor"
+              class="pickcolor"
+              type="checkbox"
+              name="colors"
+              value="Candy pink"
+              onchange="handleOnChangeColor(this.value)"
+            />
+            <span>Candy pink</span>
+
+            <img class="top" src="images/product/cand-ypink.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+          </label>
+          <label>
+            <input
+              class="pickcolor"
+              type="checkbox"
+              name="colors"
+              value="Litghtblue"
+              onchange="handleOnChangeColor(this.value)"
+            />
+            <span>Light blue</span>
+
+            <img class="top" src="images/product/light-blue.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+          </label>
+          <label>
+            <input
+              class="pickcolor"
+              type="checkbox"
+              name="colors"
+              value="Purple passion"
+              onchange="handleOnChangeColor(this.value)"
+            />
+            <span>Purple passion</span>
+
+            <img class="top" src="images/product/purple-passion.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+          </label>
+          <label>
+            <input
+              class="pickcolor"
+              type="checkbox"
+              name="colors"
+              value="Orange"
+              onchange="handleOnChangeColor(this.value)"
+            />
+            <span>Orange</span>
+
+            <img class="top" src="images/product/orange.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+          </label>
+          <label>
+            <input
+              class="pickcolor"
+              type="checkbox"
+              name="colors"
+              value="Iron red"
+              onchange="handleOnChangeColor(this.value)"
+            />
+            <span>Iron red</span>
+
+            <img class="top" src="images/product/iron-red.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+          </label>
+          <label>
+            <input
+              class="pickcolor"
+              type="checkbox"
+              name="colors"
+              value="Ultramarine blue"
+              onchange="handleOnChangeColor(this.value)"
+            />
+            <span>Ultramarine blue</span>
+
+            <img class="top" src="images/product/ultramarine-blue.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+          </label>
+          <label>
+            <input
+              class="pickcolor"
+              type="checkbox"
+              name="colors"
+              value="Yellow"
+              onchange="handleOnChangeColor(this.value)"
+            />
+            <span>Yellow</span>
+
+            <img class="top" src="images/product/yellow.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+          </label>
+        </div>
+        <input class="button1" type="submit" value="Choose and continue" />
+      </form>
+    </main>
+
+    <footer>
+      <div class="column left">
+        <p>Co-creating with your requests, needs and wishes in mind.</p>
+      </div>
+      <div class="column center">
+        <p>CustomiseMe ApS</p>
+
+        <p>Falen 21D, 2TV 5000 Odense C info@customiseme.dk</p>
+
+        <p>CVR: 42657603</p>
+      </div>
+      <div class="column right">
+        <p>Follow us on socials</p>
+        <div class="socialIcons">
+          <a href="#.html"
+            ><img src="images/Instagram.svg" alt="instagram"
+          /></a>
+          <a href="#.html"><img src="images/facebook.svg" alt="facebook" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/customisecolors.js"></script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body id="index">
+    <header>
+      <a class="logo" href="index.html"
+        ><img src="images/logos/cm-black.svg" alt="website-logo"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="customise.html" class="current">CUSTOMISE</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+        </ul>
+      </nav>
+      <li>
+        <a href="shop.html"
+          ><img src="/images/Icon.svg" alt="shopping-logo"
+        /></a>
+      </li>
+    </header>
+    <main>
+      <h1>2. Choose the shape you like the most</h1>
+      <p class="introText">
+        We have different options, have a look and click on the one you like
+        most.
+      </p>
+      <form method="get" action="customisecolor.html">
+        <div class="shape">
+          <label>
+            <input
+              type="radio"
+              name="shapes"
+              value="Square"
+              onchange="handleOnChangeShape(this.value) "
+            />
+
+            <img class="top" src="images/square.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+
+            <svg>
+              <path />
+            </svg>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="shapes"
+              value="round"
+              onchange="handleOnChangeShape(this.value) "
+            />
+
+            <img class="top" src="images/round.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+
+            <svg>
+              <path />
+            </svg>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="shapes"
+              value="star"
+              onchange="handleOnChangeShape(this.value) "
+            />
+
+            <img class="top" src="images/star.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+
+            <svg>
+              <path />
+            </svg>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="shapes"
+              value="heart"
+              onchange="handleOnChangeShape(this.value) "
+            />
+
+            <img class="top" src="images/heart.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+
+            <svg>
+              <path />
+            </svg>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="shapes"
+              value="rectangle"
+              onchange="handleOnChangeShape(this.value) "
+            />
+
+            <img class="top" src="images/rectangle.svg" />
+            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
+
+            <svg>
+              <path />
+            </svg>
+          </label>
+        </div>
+        <input class="button1" type="submit" value="Choose and continue" />
+      </form>
+    </main>
+
+    <footer>
+      <div class="column left">
+        <p>Co-creating with your requests, needs and wishes in mind.</p>
+      </div>
+      <div class="column center">
+        <p>CustomiseMe ApS</p>
+
+        <p>Falen 21D, 2TV 5000 Odense C info@customiseme.dk</p>
+
+        <p>CVR: 42657603</p>
+      </div>
+      <div class="column right">
+        <p>Follow us on socials</p>
+        <div class="socialIcons">
+          <a href="#.html"
+            ><img src="images/Instagram.svg" alt="instagram"
+          /></a>
+          <a href="#.html"><img src="images/facebook.svg" alt="facebook" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/customiseshape.js"></script>
+</html>
