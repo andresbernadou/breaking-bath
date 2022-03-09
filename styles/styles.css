@@ -181,7 +181,7 @@ footer {
     transition: all 200ms;
     max-width: max-content;
     margin-top: 4%;
-    text-align: center;
+
   }
   .workshop_button:hover{
     background-color: var(--detailColor);
