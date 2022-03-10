@@ -32,14 +32,17 @@
       <p class="introText">
         The essential oils are generally extracted through distillation, often
         by steam, and used for centuries now. The essential oil in soaps
-        benefits your skin by keeping the moisturizing level of the skin intact.
+        <strong
+          >benefits your skin by keeping the moisturizing level of the skin
+          intact.</strong
+        >
         Unlike the synthetic chemicals used in commercial soaps, the essential
         oils are extracted from plants. Essential oils in homemade soaps are
         nothing but concentrated liquids containing aroma compounds from plants.
       </p>
       <article class="customise2">
-        <form method="get" action="customiseshape.html">
-          <label>
+        <form>
+          <label class="topform">
             <input type="radio" name="es-oils" value="Top note" />
             <img class="top" src="images/top.svg" />
             <a class="oilNote">Top note <span class="topoil"></span> </a>
@@ -47,7 +50,7 @@
               <path />
             </svg>
           </label>
-          <label>
+          <label class="middleform">
             <input type="radio" name="es-oils" value="Heart note" />
             <img class="middle" src="images/middle.svg" />
             <a class="oilNote">Heart note<span class="heartoil"></span></a>
@@ -56,7 +59,7 @@
               <path />
             </svg>
           </label>
-          <label>
+          <label class="baseform">
             <input type="radio" name="es-oils" value="Base note" />
 
             <img class="base" src="images/base.svg" id="base" />
@@ -66,7 +69,6 @@
               <path />
             </svg>
           </label>
-          <input class="button1" type="submit" value="Choose and continue" />
         </form>
 
         <section class="hidden" id="popUps">
@@ -74,10 +76,10 @@
           <div class="oilContainer">
             <div class="oilPop">
               <p>
-                Base notes describe the oils that stay with you the longest.
-                They have heavy molecules that take much longer to evaporate.
-                Base notes add depth and richness to a blend as well as acting
-                as an anchor for the entire perfume.
+                <strong> Base notes </strong>describe the oils that stay with
+                you the longest. They have heavy molecules that take much longer
+                to evaporate. Base notes add depth and richness to a blend as
+                well as acting as an anchor for the entire perfume.
               </p>
             </div>
             <div class="ingredientPop">
@@ -93,15 +95,18 @@
 
                 <img src="images/product/Cedarood.png" />
               </div>
-              <label class="buttonAdd">
-                Add this oil <span>+10 Dkk</span>
+
+              <label>
                 <input
                   type="radio"
                   name="basenote"
                   onchange="handleOnChangeOil(this.value) "
                   value="cedarood"
                 />
+
+                <a class="buttonAdd">Add this oil <span>+10 Dkk</span> </a>
               </label>
+              <img class="dots" src="images/twodotsleft.svg" />
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow" />
@@ -114,10 +119,10 @@
           <div class="oilContainer">
             <div class="oilPop">
               <p>
-                Base notes describe the oils that stay with you the longest.
-                They have heavy molecules that take much longer to evaporate.
-                Base notes add depth and richness to a blend as well as acting
-                as an anchor for the entire perfume.
+                <strong> Base notes </strong> describe the oils that stay with
+                you the longest. They have heavy molecules that take much longer
+                to evaporate. Base notes add depth and richness to a blend as
+                well as acting as an anchor for the entire perfume.
               </p>
             </div>
             <div class="ingredientPop">
@@ -134,15 +139,16 @@
                 <img src="images/product/SandalWood.svg" />
               </div>
 
-              <label class="buttonAdd">
-                Add this oil <span>+10 Dkk</span>
+              <label>
                 <input
                   type="radio"
                   name="basenote"
                   onchange="handleOnChangeOil(this.value) "
                   value="sandalwood"
                 />
+                <a class="buttonAdd">Add this oil <span>+10 Dkk</span> </a>
               </label>
+              <img class="dots" src="images/twodots.svg" />
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" />
@@ -154,10 +160,11 @@
           <div class="oilContainer">
             <div class="oilPop">
               <p>
-                Heart notes are scents that emerge from a blend right after the
-                top notes have evaporated away and give perfumes their main
-                body. They do not evaporate as quickly as top notes and linger
-                on the skin longer. Lavender is an example of a middle note.
+                <strong> Heart notes </strong> are scents that emerge from a
+                blend right after the top notes have evaporated away and give
+                perfumes their main body. They do not evaporate as quickly as
+                top notes and linger on the skin longer. Lavender is an example
+                of a middle note.
               </p>
             </div>
             <div class="ingredientPop">
@@ -173,15 +180,16 @@
                 <img src="images/product/cinnamon.png" />
               </div>
 
-              <label class="buttonAdd">
-                Add this oil <span>+10 Dkk</span>
+              <label>
                 <input
                   type="radio"
                   name="heartnote"
                   onchange="handleOnChangeOil2(this.value) "
                   value="cinnamon"
                 />
+                <a class="buttonAdd">Add this oil <span>+10 Dkk</span> </a>
               </label>
+              <img class="dots" src="images/treedotsleft.svg" />
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow3" />
@@ -193,10 +201,11 @@
           <div class="oilContainer">
             <div class="oilPop">
               <p>
-                Heart notes are scents that emerge from a blend right after the
-                top notes have evaporated away and give perfumes their main
-                body. They do not evaporate as quickly as top notes and linger
-                on the skin longer. Lavender is an example of a middle note.
+                <strong> Heart notes </strong> are scents that emerge from a
+                blend right after the top notes have evaporated away and give
+                perfumes their main body. They do not evaporate as quickly as
+                top notes and linger on the skin longer. Lavender is an example
+                of a middle note.
               </p>
             </div>
             <div class="ingredientPop">
@@ -214,15 +223,16 @@
                 <img src="images/product/ginger.png" />
               </div>
 
-              <label class="buttonAdd">
-                Add this oil <span>+10 Dkk</span>
+              <label>
                 <input
                   type="radio"
                   name="heartnote"
                   onchange="handleOnChangeOil2(this.value) "
                   value="ginger"
                 />
+                <a class="buttonAdd">Add this oil <span>+10 Dkk</span> </a>
               </label>
+              <img class="dots" src="images/treedotscenter.svg" />
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow4" />
@@ -234,10 +244,11 @@
           <div class="oilContainer">
             <div class="oilPop">
               <p>
-                Heart notes are scents that emerge from a blend right after the
-                top notes have evaporated away and give perfumes their main
-                body. They do not evaporate as quickly as top notes and linger
-                on the skin longer. Lavender is an example of a middle note.
+                <strong> Heart notes </strong> are scents that emerge from a
+                blend right after the top notes have evaporated away and give
+                perfumes their main body. They do not evaporate as quickly as
+                top notes and linger on the skin longer. Lavender is an example
+                of a middle note.
               </p>
             </div>
             <div class="ingredientPop">
@@ -256,15 +267,16 @@
                 <img src="images/product/lavender.png" />
               </div>
 
-              <label class="buttonAdd">
-                Add this oil <span>+10 Dkk</span>
+              <label>
                 <input
                   type="radio"
                   name="heartnote"
                   onchange="handleOnChangeOil2(this.value) "
                   value="lavender"
                 />
+                <a class="buttonAdd">Add this oil <span>+10 Dkk</span> </a>
               </label>
+              <img class="dots" src="images/treedotsright.svg" />
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow5" />
@@ -276,10 +288,11 @@
           <div class="oilContainer">
             <div class="oilPop">
               <p>
-                Top notes are first impression scents, the one that you smell
-                first when you breathe in a blend. Top notes have tiny, light
-                molecules that evaporate quickly. These top note scents are
-                often described as cheerful, bright, light, refreshing.
+                <strong> Top notes </strong> are first impression scents, the
+                one that you smell first when you breathe in a blend. Top notes
+                have tiny, light molecules that evaporate quickly. These top
+                note scents are often described as cheerful, bright, light,
+                refreshing.
               </p>
             </div>
             <div class="ingredientPop">
@@ -297,15 +310,16 @@
                 <img src="images/product/Bergamot.png" />
               </div>
 
-              <label class="buttonAdd">
-                Add this oil <span>+10 Dkk</span>
+              <label>
                 <input
                   type="radio"
                   name="topnote"
                   onchange="handleOnChangeOil3(this.value) "
                   value="bergamot"
                 />
+                <a class="buttonAdd">Add this oil <span>+10 Dkk</span> </a>
               </label>
+              <img class="dots" src="images/treedotsleft.svg" />
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow6" />
@@ -316,10 +330,11 @@
           <div class="oilContainer">
             <div class="oilPop">
               <p>
-                Top notes are first impression scents, the one that you smell
-                first when you breathe in a blend. Top notes have tiny, light
-                molecules that evaporate quickly. These top note scents are
-                often described as cheerful, bright, light, refreshing.
+                <strong> Top notes </strong>are first impression scents, the one
+                that you smell first when you breathe in a blend. Top notes have
+                tiny, light molecules that evaporate quickly. These top note
+                scents are often described as cheerful, bright, light,
+                refreshing.
               </p>
             </div>
             <div class="ingredientPop">
@@ -338,15 +353,16 @@
                 <img src="images/product/orange.png" />
               </div>
 
-              <label class="buttonAdd">
-                Add this oil <span>+10 Dkk</span>
+              <label>
                 <input
                   type="radio"
                   name="topnote"
                   onchange="handleOnChangeOil3(this.value) "
                   value="orange sweet"
                 />
+                <a class="buttonAdd">Add this oil <span>+10 Dkk</span> </a>
               </label>
+              <img class="dots" src="images/treedotscenter.svg" />
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow7" />
@@ -357,10 +373,11 @@
           <div class="oilContainer">
             <div class="oilPop">
               <p>
-                Top notes are first impression scents, the one that you smell
-                first when you breathe in a blend. Top notes have tiny, light
-                molecules that evaporate quickly. These top note scents are
-                often described as cheerful, bright, light, refreshing.
+                <strong> Top notes </strong> are first impression scents, the
+                one that you smell first when you breathe in a blend. Top notes
+                have tiny, light molecules that evaporate quickly. These top
+                note scents are often described as cheerful, bright, light,
+                refreshing.
               </p>
             </div>
             <div class="ingredientPop">
@@ -379,20 +396,24 @@
                 <img src="images/product/rosemary.png" />
               </div>
 
-              <label class="buttonAdd">
-                Add this oil <span>+10 Dkk</span>
+              <label>
                 <input
                   type="radio"
                   name="topnote"
                   onchange="handleOnChangeOil3(this.value) "
                   value="rosemary"
                 />
+                <a class="buttonAdd">Add this oil <span>+10 Dkk</span> </a>
               </label>
+              <img class="dots" src="images/treedotsright.svg" />
             </div>
           </div>
           <img class="rightArrow" src="images/next.svg" id="rightArrow8" />
         </section>
       </article>
+      <form method="get" action="customiseshape.html">
+        <input class="button1" type="submit" value="Choose and continue" />
+      </form>
     </main>
 
     <footer>

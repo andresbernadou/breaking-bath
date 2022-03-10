@@ -22,7 +22,25 @@ function onlyOneCheckBox() {
 }
 onlyOneCheckBox();
 
-function handleOnChangeColor(col) {
-  console.log(col);
-  localStorage.setItem("Color1", col);
+function handleShowAllCheckboxes() {
+  const favorites = JSON.parse(localStorage.getItem("favorites"));
+  alert(JSON.stringify(favorites));
+}
+
+function handleMultipleCheckboxes() {
+  // Selecciono todos los checkbox por class="check"
+  const allCheckboxes = document.querySelectorAll(".pickcolor");
+  const selectedCheckboxes = [];
+  allCheckboxes.forEach((singleCheckbox) => {
+    if (singleCheckbox.checked) {
+      const importantCheckboxInfo = {
+        value: singleCheckbox.value,
+      };
+      selectedCheckboxes.push(importantCheckboxInfo);
+    }
+  });
+
+  // A este punto selectedCheckboxes contiene solo los que estan  checked
+  // Me los guardo en formato JSON en local storage
+  localStorage.setItem("colors", JSON.stringify(selectedCheckboxes));
 }

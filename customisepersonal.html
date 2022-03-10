@@ -28,12 +28,11 @@
       </li>
     </header>
     <main>
-      <h1>2. Choose the shape you like the most</h1>
+      <h1>4. Make it personal</h1>
       <p class="introText">
-        We have different options, have a look and click on the one you like
-        most.
+        You can add a personal message to the soap or stamp a logo or image.
       </p>
-      <form>
+      <form action="customisepreview.html">
         <div class="message">
           <label for="personaltext">
             <span>Add a personal message or name</span>
@@ -44,6 +43,7 @@
               maxlength="20"
               size="150"
               placeholder="Write it here. Max 20 characters."
+              onchange="handleOnChangeMessage(this.value) "
             />
 
             <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
@@ -80,4 +80,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/customisepersonal.js"></script>
 </html>

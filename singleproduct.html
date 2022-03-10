@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body id="index">
+    <header>
+      <a class="logo" href="index.html"
+        ><img src="images/logos/cm-black.svg" alt="website-logo"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="customise.html">CUSTOMISE</a></li>
+          <li><a href="products.html" class="current">PRODUCTS</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+        </ul>
+      </nav>
+      <li>
+        <a href="shop.html"
+          ><img src="images/Icon.svg" alt="shopping-logo"
+        /></a>
+      </li>
+    </header>
+    <main>
+      <h2 class="singleproducttitle">Mairselle Soap</h2>
+      <aritcle class="singleproduct">
+        <section class="first">
+          <img class="productimage" src="" />
+          <div class="icons">
+            <img src="images/world.svg" /><img src="images/hand.svg" />
+            <img src="images/plant.svg" />
+          </div>
+        </section>
+        <section class="second">
+          <div>
+            <h3>Ingredients</h3>
+            <p class="ingredients"></p>
+            <span>Certified organic product</span>
+          </div>
+          <div>
+            <h3>Color</h3>
+            <img class="productcolor" src="images/product/purplepassion.svg" />
+          </div>
+          <div>
+            <h3>Shape</h3>
+            <img class="productcolor" src="images/square.svg" />
+          </div>
+          <div>
+            <p class="weight"></p>
+            <p class="availabity"></p>
+
+            <input type="number" size="1" class="numberinput" /><a
+              class="buttonSingleProduct"
+              onclick="handleButtonClick()"
+              >ADD<span class=""> +55 DKK</span>
+            </a>
+          </div>
+        </section>
+      </aritcle>
+    </main>
+
+    <footer>
+      <div class="column left">
+        <p>Co-creating with your requests, needs and wishes in mind.</p>
+      </div>
+      <div class="column center">
+        <p>CustomiseMe ApS</p>
+
+        <p>Falen 21D, 2TV 5000 Odense C info@customiseme.dk</p>
+
+        <p>CVR: 42657603</p>
+      </div>
+      <div class="column right">
+        <p>Follow us on socials</p>
+        <div class="socialIcons">
+          <a href="#.html"
+            ><img src="images/Instagram.svg" alt="instagram"
+          /></a>
+          <a href="#.html"><img src="images/facebook.svg" alt="facebook" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/singleproduct.js"></script>
+  </body>
+</html>
