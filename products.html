@@ -15,46 +15,33 @@
       <nav>
         <ul>
           <li><a href="index.html">HOME</a></li>
-          <li><a href="customise.html" class="current">CUSTOMISE</a></li>
-          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="customise.html">CUSTOMISE</a></li>
+          <li><a href="products.html" class="current">PRODUCTS</a></li>
           <li><a href="about.html">ABOUT US</a></li>
         </ul>
       </nav>
       <li>
         <a href="shop.html"
-          ><img src="/images/Icon.svg" alt="shopping-logo"
+          ><img src="images/Icon.svg" alt="shopping-logo"
         /></a>
       </li>
     </header>
     <main>
-      <h1>4. Make it personal</h1>
-      <p class="introText">
-        You can add a personal message to the soap or stamp a logo or image.
-      </p>
-      <form action="customisepreview.html">
-        <div class="message">
-          <label for="personaltext">
-            <span>Add a personal message or name</span>
-            <input
-              type="text"
-              name="message"
-              minlength="4"
-              maxlength="20"
-              size="150"
-              placeholder="Write it here. Max 20 characters."
-              onchange="handleOnChangeMessage(this.value) "
-            />
+      <h1 class="productsh1">Products</h1>
 
-            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
-          </label>
-          <label for="myfile"
-            ><span>Stamp a logo or image:</span>
-            <input type="file" id="myfile" name="myfile" class="filebutton" />
-            <a class="buttonAdd2">ADD<span> +5 DKK</span> </a>
-          </label>
-        </div>
-        <input class="button1" type="submit" value="Choose and continue" />
-      </form>
+      <article id="productList" class="grid"></article>
+      <template id="productTemplate">
+        <section class="productCard">
+          <h2>product NAME</h2>
+          <a href="shortcut.html">
+            <img class="productCardImage" />
+
+            <a class="buttonProduct" onclick="handleButtonClick()"
+              >ADD<span class=""> +5 DKK</span>
+            </a>
+          </a>
+        </section>
+      </template>
     </main>
 
     <footer>
@@ -79,5 +66,5 @@
       </div>
     </footer>
   </body>
-  <script src="js/customisepersonal.js"></script>
+  <script src="js/products.js"></script>
 </html>

@@ -1,6 +1,6 @@
-document.querySelector(".base").addEventListener("click", showOil);
-document.querySelector(".middle").addEventListener("click", showOil2);
-document.querySelector(".top").addEventListener("click", showOil3);
+document.querySelector(".baseform").addEventListener("click", showOil);
+document.querySelector(".middleform").addEventListener("click", showOil2);
+document.querySelector(".topform").addEventListener("click", showOil3);
 document.querySelector("#rightArrow").addEventListener("click", nextOil);
 document.querySelector("#rightArrow3").addEventListener("click", nextOil2);
 document.querySelector("#rightArrow4").addEventListener("click", nextOil3);

@@ -7,8 +7,8 @@
   --accentColor: #f8e4d1;
   --detailColor: #d2d6c5;
   --detailColor2: #f2e6d8;
-  --pagesLeft: #c4c4c4 0.2;
-  --PageNoteIn: #c4c4c4;
+  --pagesLeft: #c4c4c4 0.8;
+  --PageNoteIn: darkgrey;
   --sidePadding: 1rem;
 }
 /* global styling */
@@ -86,7 +86,7 @@ header nav ul li a::after {
   background-color: var(--accentColor);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
 header nav ul li a:hover::after {
@@ -109,16 +109,20 @@ header nav ul li a:hover::after {
 /* buttons */
 .button1 {
   text-decoration: none;
-  color: var(--mainColor);
+  color: white;
   padding: 1rem;
-  background-color: var(--detailColor2);
+  background-color: var(--detailColor);
   margin-top: 1rem;
   width: fit-content;
+  margin-left: 45%;
+  font-weight: bold;
   border-radius: 1rem;
-  border: var(--mainColor) 1px outset;
+
   font-size: 1.2rem;
-  align-self: center;
-  box-shadow: 3px 4px 5px 0px rgba(186, 184, 184, 0.75);
+}
+.button1:hover {
+  background-color: var(--mainColor);
+  transition: 0.3s;
 }
 
 .buttonAdd {
@@ -137,11 +141,15 @@ header nav ul li a:hover::after {
   text-align: center;
   justify-self: center;
 }
+.buttonAdd:checked + a {
+  background-color: var(--accentColor);
+}
 .buttonAdd span {
   color: var(--PageNoteIn);
   margin-left: 1rem;
   font-weight: lighter;
 }
+
 .buttonAdd2 {
   text-decoration: none;
 
@@ -167,7 +175,12 @@ header nav ul li a:hover::after {
   text-align: center;
   justify-self: center;
   font-weight: bold;
+  justify-items: center;
+  align-items: center;
 }
+/* .customise2 form label a:first-of-type {
+  transform: translateY(5rem);
+} */
 .filebutton {
   border: 4px solid #d2d6c5;
   width: 20rem;
@@ -208,25 +221,35 @@ h1 {
 }
 
 .introText {
-  margin: 1rem;
+  margin: 1.1rem;
   width: 80%;
   margin-left: 5rem;
-  color: var(--PageNoteIn);
-  font-size: 1.2rem;
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  line-height: 1.5rem;
 }
 
 /* customiseOils */
+
 .customise2 {
   display: flex;
+
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 .customise2 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 50%;
-  align-content: center;
+  justify-content: space-evenly;
+  width: 40%;
+  height: fit-content;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  min-width: 30rem;
 }
 .customise2 section {
+  min-width: 40rem;
   width: 50%;
 }
 .customise2 form label {
@@ -234,23 +257,57 @@ h1 {
   justify-content: center;
   align-content: center;
   display: grid;
+  justify-content: center;
+  align-content: center;
 }
-
+.customise2 form label input[type="radio"]:checked + img + a {
+  font-size: 1.4rem;
+}
+.customise2 form label input[type="radio"]:checked + img {
+}
+.customise2 form label input[type="radio"]:checked + img + a span {
+  font-size: 1rem;
+}
+.topform {
+}
+.middleform {
+}
+.baseform {
+}
+.dots {
+  margin-left: 48%;
+}
 .top {
-  width: 30%;
-  margin-left: 35%;
-  /* margin-left: 100px; */
+  width: 36%;
+  margin-left: 36.7%;
   margin-bottom: -1rem;
+  /* margin-left: 100px; */
+}
+.topform a {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.middleform a {
+  margin-bottom: 4rem;
+  margin-left: 3rem;
+}
+.baseform a {
+  margin-bottom: 5rem;
+  margin-left: 2.5rem;
 }
 .middle {
-  width: 50%;
+  width: 58%;
   align-self: center;
-  margin-left: 25%;
+  margin-left: 24%;
+  margin-bottom: -4rem;
+  margin-top: -7rem;
 }
 .base {
-  width: 80%;
-  margin-top: ;
-  margin-left: 10%;
+  width: 97%;
+  margin-top: 0;
+  margin-left: 3%;
+  margin-top: -2.5rem;
+  height: 10rem;
 }
 
 .oilPop {
@@ -258,6 +315,7 @@ h1 {
   margin: 1rem;
   padding: 1rem;
   border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 .ingredientPop {
   border: 4px solid #d2d6c5;
@@ -280,8 +338,14 @@ h1 {
 
   width: fit-content;
 }
+.cardContent img {
+  width: 10rem;
+  height: 10rem;
+  flex-shrink: ;
+}
 .cardContent p {
   color: var(--PageNoteIn);
+  text-align: center;
 
   font-size: 1.1rem;
 }
@@ -298,26 +362,95 @@ h1 {
 .leftArrow {
   width: 1.5rem;
 }
-
-.baseoil,
 .heartoil,
+.baseoil,
 .topoil {
   margin-left: 0.5rem;
   font-weight: normal;
   color: black;
+  text-transform: capitalize;
+  text-align: center;
+}
+.heartoil::before {
+  content: "\A";
+  white-space: pre;
+}
+.baseoil::before {
+  content: "\A";
+  white-space: pre;
+}
+.topoil::before {
+  content: "\A";
+  white-space: pre;
 }
 
-/* when checked, add a border to the img */
-.customise2 label input[type="radio"]:checked + img + a {
+/* when checked, add a style to the img anchor */
+label input[type="radio"]:checked + img + a {
+  color: var(--mainColor);
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+input[type="checkbox"]:checked + span + img + a {
   color: var(--mainColor);
   font-weight: bold;
   font-size: 1.4rem;
   transition: 0.3s;
+  background-color: var(--accentColor);
+}
+input[type="radio"]:checked + a {
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  background-color: var(--accentColor);
+}
+input[type="radio"]:checked + a span {
+  color: white;
+}
+input[type="text"]:focus + a {
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  background-color: var(--accentColor);
+}
+
+input[type="text"]:focus-visible + a {
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  background-color: var(--accentColor);
+}
+/* input[type="text"]:valid + a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  content: "added";
+  background-color: var(--mainColor);
+} */
+input[type="text"]:invalid + a {
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  background-color: rgba(rgb(185, 83, 24), green, blue, alpha);
 }
 
 /* hiding the radio buttons the  a11y. way: 
 https://www.a11yproject.com/posts/how-to-hide-content/ */
 input[type="radio"],
+.visually-hidden {
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+input[type="checkbox"],
 .visually-hidden {
   clip: rect(0 0 0 0);
 
@@ -347,11 +480,14 @@ label > * {
   justify-content: space-between;
 
   flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 .shape label {
   display: flex;
   flex-direction: column;
+  width: 15rem;
+  align-content: center;
 }
 .shape label img {
   height: 10rem;
@@ -365,17 +501,67 @@ label > * {
 
   transition: 0.3s;
 }
-.shape label input[type="radio"]:checked + img + a {
+.buttonAdd2:hover {
   color: var(--mainColor);
   background-color: var(--detailColor2);
 
   transition: 0.3s;
 }
-input[type="submit"] {
-  align-self: center;
-  margin: auto;
-  margin-left: 33%;
+.buttonAdd2:active {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+
+  transition: 0.3s;
 }
+.buttonAdd a:active {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+
+  transition: 0.3s;
+}
+.shape label input[type="radio"]:checked + img {
+  transition: 0.2s;
+  scale: (1.2, 1.2);
+}
+.shape label input[type="radio"]:checked + img + a {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+  font-size: 1.4rem;
+
+  transition: 0.3s;
+}
+
+input[type="file"]:checked + a:active {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+  content: "Added";
+
+  transition: 0.3s;
+}
+input[type="text"]:checked + a:active {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+  content: "Added";
+
+  transition: 0.3s;
+}
+input[type="checkbox"]:checked + span + img + a:active {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+  content: "Added";
+
+  transition: 0.3s;
+}
+.shape label input[type="radio"]:checked + img + a + span {
+  color: var(white);
+
+  transition: 0.3s;
+}
+input[type="submit"] {
+  margin-left: 38%;
+  border: none;
+}
+
 /* custimise color */
 .color {
   display: flex;
@@ -401,12 +587,16 @@ input[type="submit"] {
   width: 80%;
   align-self: center;
 }
-.color label input[type="checkbox"]::selection + img + a {
+.color label input[type="checkbox"]:focus + img + a {
   border: 1px black solid;
   color: var(--mainColor);
   background-color: var(--detailColor2);
 
   transition: 0.3s;
+}
+.colorpreview {
+  flex-direction: row;
+  padding-bottom: 1rem;
 }
 /* input[type="checkbox"],
 .visually-hidden {
@@ -419,6 +609,13 @@ input[type="submit"] {
 } */
 
 /* customise personal message */
+input[type="checkbox"]:focus {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+  content: "Added";
+
+  transition: 0.3s;
+}
 .message {
   display: flex;
   flex-direction: column;
@@ -436,6 +633,7 @@ input[type="submit"] {
   height: 5rem;
   border-radius: 1rem;
 }
+
 .message label input[type="text"]:checked {
   border: 6px solid #d2d6c5;
 }
@@ -447,16 +645,245 @@ input[type="submit"] {
 /* preview cutomise  */
 
 .preview {
+  width: 90%;
+  margin-left: 5%;
   display: flex;
+  justify-content: space-between;
+}
+
+.preview div {
+  width: 10%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.preview div h2 {
+  text-align: center;
+}
+.shapepreview {
+  height: 20rem;
+}
+.customise3 h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.customise3 {
+  margin-top: 1rem;
+}
+.customise3 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  align-content: center;
+  margin-left: 25%;
+}
+.preview div div {
+  display: flex;
+}
+.customise3 section {
+  width: 50%;
+}
+.customise3 form label {
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+}
+.customise3 label input[type="radio"] + img + a {
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+.pre {
+  margin-left: 45%;
+  width: 10%;
+  margin-bottom: 5rem;
 }
 
 /* hiding the radio buttons the  a11y. way: 
 https://www.a11yproject.com/posts/how-to-hide-content/ */
 
+/* product page */
+.productsh1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 0px;
+}
+
+#productTemplate {
+  padding: 2rem var(--sidePadding);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5rem;
+  display: grid;
+  margin: 1rem;
+}
+.productCard {
+  width: 200px;
+}
+.productCard h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.productCard a img {
+  margin-bottom: 2rem;
+}
+.productCard a {
+  align-content: center;
+}
+
+.productCard a a {
+  align-self: center;
+  width: fit-content;
+  margin-top: 0px;
+}
+.buttonProduct {
+  text-decoration: none;
+
+  padding: 0.5rem;
+  font-weight: bold;
+
+  width: FIT-content;
+  border-radius: 1rem;
+  border: var(--accentColor) 5px solid;
+  font-size: 1.2rem;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+.buttonProduct:hover {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+
+  transition: 0.3s;
+}
+.buttonProduct:active {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+  font-size: 1.4rem;
+
+  transition: 0.3s;
+}
+.buttonProduct span {
+  color: var(--PageNoteIn);
+  margin-left: 1rem;
+  font-weight: lighter;
+}
+/* single product page */
+.singleproduct {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+}
+.singleproduct section {
+  width: 50%;
+}
+.singleproduct section div h3 {
+  color: var(--mainColor);
+  margin-bottom: 1rem;
+}
+.first {
+  border-right: 1px solid var(--mainColor);
+}
+.second {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.second div {
+  width: 40%;
+  margin-right: 5%;
+  margin-left: 5%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.second div span {
+  margin-top: 1rem;
+  font-style: 0.9rem;
+  color: var(--PageNoteIn);
+  font-style: italic;
+}
+.second div img {
+  width: 50%;
+  align-content: center;
+  justify-content: center;
+}
+.productimage {
+  width: 90%;
+  margin-right: 5%;
+}
+.singleproducttitle {
+  margin-bottom: 1rem;
+  margin-left: 5%;
+  color: var(--mainColor);
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  width: 90%;
+  margin-right: 5%;
+}
+.icons img {
+  width: 12%;
+}
+.numberinput {
+  width: 3rem;
+  height: 3rem;
+  border: 5px solid var(--detailColor);
+  border-radius: 1rem;
+  align-self: center;
+  margin-top: 1rem;
+}
+.addproduct {
+  display: flex;
+  width: 100%;
+}
+.buttonSingleProduct:hover {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+
+  transition: 0.3s;
+}
+.buttonSingleProduct:active {
+  color: var(--mainColor);
+  background-color: var(--detailColor2);
+  font-size: 1.4rem;
+
+  transition: 0.3s;
+}
+.buttonSingleProduct {
+  text-decoration: none;
+
+  padding: 0.5rem;
+  font-weight: bold;
+
+  width: FIT-content;
+  border-radius: 1rem;
+  border: var(--accentColor) solid;
+  font-size: 1.2rem;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+  margin-top: -3rem;
+  margin-left: 3rem;
+}
 /* footer styles */
 
 footer {
-  margin-top: 1rem;
+  margin-top: 3rem;
   font-size: 1rem;
   background-color: var(--mainColor);
   height: 8rem;
