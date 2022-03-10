@@ -130,7 +130,6 @@ footer {
   text-justify: auto;
   font-family: var(--mainFont);
   text-align: center;
-  font-size: 26px;
   line-height: 1.6;
 
 }
@@ -142,23 +141,27 @@ footer {
 .workshop_content_right{
   font-family: var(--mainFont);
   padding: 1em;
-  font-size: 26px;
   line-height: 1.6;
 }
 .workshop_content_right h2{
   font-family: var(--mainFont);
   color: var(--mainColor);
   padding: 1em;
-  padding-top: 5em;
-  
+  padding-top: 4em;
+
 }
 .workshop_content_right ul{
   list-style: circle;
   font-family: var(--mainFont);
   line-height: 1.6;
 }
+
+.process{
+  padding-top: 1em;
+  padding-right: 4em;
+}
 .workshop_img{
-  width: 40%;
+  width: 50%;
   padding: 3em;
   margin-left: 8em;
   
@@ -167,9 +170,10 @@ footer {
   font-family: var(--mainFont);
   padding-bottom: 1em;
   padding-right: 3em;
-  padding-left: 3em;
-  font-size: 26px;
+  padding-left: 5em;
   line-height: 1.6;
+  text-justify: auto;
+  text-align: center;
 
 }
 .workshop_button{
@@ -179,8 +183,7 @@ footer {
     box-shadow: rgba(25,25,25,.04) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
     color: white;
     cursor: pointer;
-    font-size: 2em;
-    height: 50px;
+    height: 30px;
     width: 100%;
     padding: 3px 25px;
     transition: all 200ms;
