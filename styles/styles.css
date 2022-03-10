@@ -37,6 +37,9 @@ body {
 p {
 font-family: var(--mainFont);
 }
+.p_font_size{
+  font-size: 1.3rem;
+}
 h1,h2,h3,h4 {
   font-family: var(--subFont); 
 }
@@ -127,7 +130,6 @@ header nav ul li a:hover::after {
   margin-left: 45%;
   font-weight: bold;
   border-radius: 1rem;
-
   font-size: 1.2rem;
 }
 .button1:hover {
@@ -930,11 +932,33 @@ button:hover{
   width: 100%;
   background: none;
 }
-.header_index nav ul li a{
+#nav_style_index li a{
   width: auto;
   color: var(--mainColor);
 }
-header nav ul li a:hover::after {
+#nav_style_index li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0.4rem;
+  width: 100%;
+  height: 4px;
+  margin-top: 1rem;
+  content: "";
+  background-color: var(--mainColor);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+#nav_style_index li a:hover::after {
+  transform: scaleX(1);
+  background-color: var(--mainColor);
+  transform-origin: right;
+}
+
+
+#nav_style_index ul li a:hover::after {
   background-color: var(--mainColor);
 }
 #h1_index {
@@ -954,6 +978,7 @@ header nav ul li a:hover::after {
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 .text_align_center {
@@ -1029,6 +1054,10 @@ margin: 2%;
 .grid_container_about{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  margin-top: 6%;
+}
+.text_about{
+  margin-left: 20%;
 }
 .grid_container_about img{
   max-width: 50%;
@@ -1064,8 +1093,8 @@ margin: 2%;
 color: var(--accentColor);
 }
 /* Workshop style */
-.workshop_header h2 {
-  font-family: var(--mainFont);
+.workshop_header h1 {
+  font-family: var(--subFont);
   color: var(--mainColor);
   text-align: center;
   padding-top: 1em;
@@ -1075,7 +1104,7 @@ color: var(--accentColor);
 }
 .workshop_subtitle{
   text-justify: auto;
-  font-family: var(--mainFont);
+  font-family: var(--subFont);
   text-align: center;
   line-height: 1.6;
 
@@ -1091,10 +1120,11 @@ color: var(--accentColor);
   line-height: 1.6;
 }
 .workshop_content_right h2{
-  font-family: var(--mainFont);
+  font-family: var(--subFont);
   color: var(--mainColor);
   padding: 1em;
-  padding-top: 4em;
+  padding-top: 1em;
+  font-size: 1.7rem;
 
 }
 .workshop_content_right ul{
