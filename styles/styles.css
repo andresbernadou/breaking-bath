@@ -10,6 +10,7 @@
   --detailColor2: #f2e6d8;
   --pagesLeft: #c4c4c4 0.2;
   --PageNoteIn: #c4c4c4;
+  --buttonTextColor:white; 
   --sidePadding: 1rem;
 }
 /* global styling */
@@ -642,3 +643,99 @@ margin: 2%;
 .h2_about{
 color: var(--accentColor);
 }
+/* Workshop style */
+.workshop_header h2 {
+  font-family: var(--mainFont);
+  color: var(--mainColor);
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 40px;
+  
+}
+.workshop_subtitle{
+  text-justify: auto;
+  font-family: var(--mainFont);
+  text-align: center;
+  line-height: 1.6;
+
+}
+.workshop_content{
+  display: flex;
+  padding: 1em;
+  
+}
+.workshop_content_right{
+  font-family: var(--mainFont);
+  padding: 1em;
+  line-height: 1.6;
+}
+.workshop_content_right h2{
+  font-family: var(--mainFont);
+  color: var(--mainColor);
+  padding: 1em;
+  padding-top: 4em;
+
+}
+.workshop_content_right ul{
+  list-style: circle;
+  font-family: var(--mainFont);
+  line-height: 1.6;
+}
+
+.process{
+  padding-top: 1em;
+  padding-right: 4em;
+}
+.workshop_img{
+  width: 50%;
+  padding: 3em;
+  margin-left: 8em;
+  
+}
+.workshop_description{
+  font-family: var(--mainFont);
+  padding-bottom: 1em;
+  padding-right: 3em;
+  padding-left: 5em;
+  line-height: 1.6;
+  text-justify: auto;
+  text-align: center;
+
+}
+.workshop_button{
+    background-color: var(--mainColor);
+    opacity: 80%;
+    border-radius: 50px;
+    box-shadow: rgba(25,25,25,.04) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+    padding: 3px 25px;
+    transition: all 200ms;
+    max-width: max-content;
+    margin-top: 4%;
+}
+  .workshop_button:hover{
+    background-color: var(--detailColor);
+    transform: scale(1.05);
+  }
+
+  .center {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+    }
+
+.workshop_line_images ul{
+padding-top: 3em;
+  justify-content: space-between;
+  width: 100%;
+  display: inline-flex;
+}
+
+
+
+
+
