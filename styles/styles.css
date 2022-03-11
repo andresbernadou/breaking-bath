@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100;300;500;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
 :root {
   --mainFont: "Lato", sans-serif;
-  --subFont:'Ledger', serif;
+  --subFont: "Ledger", serif;
   --mainColor: #868c6d;
   --accentColor: #f8e4d1;
   --detailColor: #d2d6c5;
@@ -35,18 +35,20 @@ body {
   height: 100%;
 }
 p {
-font-family: var(--mainFont);
+  font-family: var(--mainFont);
 }
-.p_font_size{
+.p_font_size {
   font-size: 1.3rem;
 }
-h1,h2,h3,h4 {
-  font-family: var(--subFont); 
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--subFont);
 }
-h2{
+h2 {
   font-size: 2.5rem;
   color: var(--mainColor);
-
 }
 li {
   list-style: none;
@@ -906,12 +908,12 @@ footer {
 }
 
 /* Button styling*/
-button{
+button {
   background-color: var(--mainColor);
   opacity: 80%;
   border-radius: 50px;
   border-width: 0;
-  box-shadow: rgba(25,25,25,.04) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -920,9 +922,9 @@ button{
   padding: 0 25px;
   transition: all 200ms;
   max-width: max-content;
- margin-top: 4%;
+  margin-top: 4%;
 }
-button:hover{
+button:hover {
   background-color: var(--detailColor);
   transform: scale(1.05);
 }
@@ -932,7 +934,7 @@ button:hover{
   width: 100%;
   background: none;
 }
-#nav_style_index li a{
+#nav_style_index li a {
   width: auto;
   color: var(--mainColor);
 }
@@ -957,7 +959,6 @@ button:hover{
   transform-origin: right;
 }
 
-
 #nav_style_index ul li a:hover::after {
   background-color: var(--mainColor);
 }
@@ -978,7 +979,6 @@ button:hover{
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .text_align_center {
@@ -988,113 +988,111 @@ button:hover{
 .dflex {
   display: flex;
 }
-.dgrid{
+.dgrid {
   display: grid;
 }
 
 .justify_center {
   justify-content: center;
 }
-.buttons_index{
+.buttons_index {
   width: 20%;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.main_index_2{
+.main_index_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.index_2_item_1{
+.index_2_item_1 {
   grid-column: 1/2;
-  background-color:var(--accentColor);
+  background-color: var(--accentColor);
   flex-direction: column;
   align-items: center;
 }
-.index_2_item_2{
+.index_2_item_2 {
   grid-column: 2/3;
 }
-.main_index_3{
+.main_index_3 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
-.plant_based_index{
-grid-column: 1/2;
-background-color: var(--detailColor);
+.plant_based_index {
+  grid-column: 1/2;
+  background-color: var(--detailColor);
 }
-.eco_friendly_index{
-grid-column: 2/3;
-background-color: var(--mainColor);
+.eco_friendly_index {
+  grid-column: 2/3;
+  background-color: var(--mainColor);
 }
-.handmade_index{
+.handmade_index {
   grid-column: 3/3;
   background-color: var(--detailColor);
 }
-.icon_index{
+.icon_index {
   max-width: 20%;
 }
-.main_index_4{
+.main_index_4 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
-.index_4_item_2{
+.index_4_item_2 {
   grid-column: 2/3;
   flex-direction: column;
   align-items: center;
- 
 }
-.main_index_5{
+.main_index_5 {
   flex-direction: inherit;
 }
-.main_index_5 img{
-max-width: 20%;
-margin: 2%;
-
+.main_index_5 img {
+  max-width: 20%;
+  margin: 2%;
 }
 /* About us */
-#h1_about{
+#h1_about {
   text-align: center;
 }
 
-.grid_container_about{
+.grid_container_about {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   margin-top: 6%;
 }
-.text_about{
+.text_about {
   margin-left: 20%;
 }
-.grid_container_about img{
+.grid_container_about img {
   max-width: 50%;
   margin: auto;
 }
-.grid_container_about_values{
+.grid_container_about_values {
   grid-template-columns: 1fr 1fr 1fr;
   min-height: 17vh;
   margin-top: 20px;
 }
-.grid_item_mission{
+.grid_item_mission {
   grid-column: 1/2;
   background-color: var(--detailColor);
   text-align: center;
-    padding: 20px;
+  padding: 20px;
 }
-.grid_container_about_values h2{
+.grid_container_about_values h2 {
   font-size: 2rem;
-} 
-.grid_item_values{
+}
+.grid_item_values {
   grid-column: 2/3;
   background-color: var(--accentColor);
   text-align: center;
-    padding: 20px;
+  padding: 20px;
 }
-.grid_item_vision{
+.grid_item_vision {
   grid-column: 3/4;
   background-color: var(--detailColor);
   text-align: center;
-    padding: 20px;
+  padding: 20px;
 }
-.h2_about{
-color: var(--accentColor);
+.h2_about {
+  color: var(--accentColor);
 }
 /* Workshop style */
 .workshop_header h1 {
@@ -1104,50 +1102,45 @@ color: var(--accentColor);
   padding-top: 1em;
   padding-bottom: 1em;
   font-size: 40px;
-  
 }
-.workshop_subtitle{
+.workshop_subtitle {
   text-justify: auto;
   font-family: var(--subFont);
   text-align: center;
   line-height: 1.6;
-
 }
-.workshop_content{
+.workshop_content {
   display: flex;
   padding: 1em;
-  
 }
-.workshop_content_right{
+.workshop_content_right {
   font-family: var(--mainFont);
   padding: 1em;
   line-height: 1.6;
 }
-.workshop_content_right h2{
+.workshop_content_right h2 {
   font-family: var(--subFont);
   color: var(--mainColor);
   padding: 1em;
   padding-top: 1em;
   font-size: 1.7rem;
-
 }
-.workshop_content_right ul{
+.workshop_content_right ul {
   list-style: circle;
   font-family: var(--mainFont);
   line-height: 1.6;
 }
 
-.process{
+.process {
   padding-top: 1em;
   padding-right: 4em;
 }
-.workshop_img{
+.workshop_img {
   width: 50%;
   padding: 3em;
   margin-left: 8em;
-  
 }
-.workshop_description{
+.workshop_description {
   font-family: var(--mainFont);
   padding-bottom: 1em;
   padding-right: 3em;
@@ -1155,41 +1148,35 @@ color: var(--accentColor);
   line-height: 1.6;
   text-justify: auto;
   text-align: center;
-
 }
-.workshop_button{
-    background-color: var(--mainColor);
-    opacity: 80%;
-    border-radius: 50px;
-    box-shadow: rgba(25,25,25,.04) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
-    color: white;
-    cursor: pointer;
-    height: 30px;
-    width: 100%;
-    padding: 3px 25px;
-    transition: all 200ms;
-    max-width: max-content;
-    margin-top: 4%;
+.workshop_button {
+  background-color: var(--mainColor);
+  opacity: 80%;
+  border-radius: 50px;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 100%;
+  padding: 3px 25px;
+  transition: all 200ms;
+  max-width: max-content;
+  margin-top: 4%;
 }
-  .workshop_button:hover{
-    background-color: var(--detailColor);
-    transform: scale(1.05);
-  }
+.workshop_button:hover {
+  background-color: var(--detailColor);
+  transform: scale(1.05);
+}
 
-  .center {
-    margin: auto;
-    width: 20%;
-    padding: 10px;
-    }
+.center {
+  margin: auto;
+  width: 20%;
+  padding: 10px;
+}
 
-.workshop_line_images ul{
-padding-top: 3em;
+.workshop_line_images ul {
+  padding-top: 3em;
   justify-content: space-between;
   width: 100%;
   display: inline-flex;
 }
-
-
-
-
-
