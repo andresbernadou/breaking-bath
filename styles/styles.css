@@ -995,6 +995,10 @@ button:hover{
 .justify_center {
   justify-content: center;
 }
+.buttons_index{
+  width: 20%;
+  justify-content: space-between;
+}
 
 .main_index_2{
   display: grid;
