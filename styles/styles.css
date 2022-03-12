@@ -704,7 +704,7 @@ input[type="checkbox"]:focus {
   width: 40%;
   align-content: center;
   margin-left: 28%;
-  background-image: url(..trianglenotes.svg);
+  background-image: url(/breaking-bath/images/trianglenotes.svg);
 
   background-repeat: no-repeat;
 }
